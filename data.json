@@ -1,0 +1,258 @@
+{
+    "header": "Which Collis food station are you?",
+    "outcomes": [
+        {
+            "name": "bad",
+            "img": "img/bad.png", 
+            "text": "You didn't answer all of the questions <span class='color-answer' id='red'>GO BACK</span>!"
+        },
+        {
+            "name": "outcome1",
+            "img": "img/pasta.png", 
+            "text": "You got <span class='color-answer'>Collis Pasta</span>! A hearty meal for a hearty you!"
+        },
+        {
+            "name": "outcome2",
+            "img": "img/stirfry.png", 
+            "text": "You got <span class='color-answer'>Stir Fry</span>! As customizable as you are!"
+        },
+        {
+            "name": "outcome3",
+            "img": "img/sushi.png", 
+            "text": "You got <span class='color-answer'>Sushi</span>! Nice!"
+        },
+        {
+            "name": "outcome4",
+            "img": "img/latenight.png", 
+            "text": "You got <span class='color-answer'>Late Night</span>! Cool!"
+        },
+        {
+            "name": "outcome5",
+            "img": "img/egg.png", 
+            "text": "You got <span class='color-answer'>Eggs</span>! Great way to start the day!"
+        },
+        {
+            "name": "outcome6",
+            "img": "img/smoothie.png", 
+            "text": "You got <span class='color-answer'>Smoothie</span>! Nice!"
+        }
+    ],
+    "questions": [
+        {
+            "question": "What is your favorite study spot on campus?",
+            "question_name": "study",
+            "question_type": "image",
+            "question_img_url": "img/study.png",
+            "answers": [
+                {
+                    "text": "Collis",
+                    "img_url": "img/quiz-cover.png",
+                    "value": "1"
+                },
+                {
+                    "text": "The Cube",
+                    "img_url": "img/onion.png",
+                    "value": "2"
+                },
+                {
+                    "text": "In your room.",
+                    "img_url": "img/dorm.png",
+                    "value": "3"
+                },
+                {
+                    "text": "Baker-Berry",
+                    "img_url": "img/baker.png",
+                    "value": "4"
+                },
+                {
+                    "text": "On the green.",
+                    "img_url": "img/green.png",
+                    "value": "5"
+                },
+                {
+                    "text": "Starbucks",
+                    "img_url": "img/bucks.png",
+                    "value": "6"
+                }
+
+            ]
+        },
+        {
+            "question": "Which House are you in?",
+            "question_name": "house",
+            "question_type": "text",
+            "question_img_url": "img/house.png",
+            "answers": [
+                {
+                    "text": "School",
+                    "value": "1"
+                },
+                {
+                    "text": "West",
+                    "value": "2"
+                },
+                {
+                    "text": "South",
+                    "value": "3"
+                },
+                {
+                    "text": "North Park",
+                    "value": "4"
+                },
+                {
+                    "text": "East Wheelock",
+                    "value": "5"
+                },
+                {
+                    "text": "Allen",
+                    "value": "6"
+                }
+
+            ]
+        },
+        {
+            "question": "Choose a place to eat out in Hanover.",
+            "question_name": "eatout",
+            "question_type": "image",
+            "question_img_url": "img/eat.png",
+            "answers": [
+                {
+                    "text": "Pine",
+                    "img_url": "img/pine.png",
+                    "value": "1"
+                },
+                {
+                    "text": "Molly's",
+                    "img_url": "img/mollys.png",
+                    "value": "2"
+                },
+                {
+                    "text": "Boloco",
+                    "img_url": "img/boloco.png",
+                    "value": "3"
+                },
+                {
+                    "text": "Skinny Pancake",
+                    "img_url": "img/skinny.png",
+                    "value": "4"
+                },
+                {
+                    "text": "Domino's",
+                    "img_url": "img/dominos.png",
+                    "value": "5"
+                },
+                {
+                    "text": "Tuk Tuk Thai",
+                    "img_url": "img/tuktuk.png",
+                    "value": "6"
+                }
+
+            ]
+        },
+        {
+            "question": "You're in the library and need a snack. Where do you go?",
+            "question_name": "snack",
+            "question_type": "text",
+            "question_img_url": "img/library.png",
+            "answers": [
+                {
+                    "text": "KAF",
+                    "value": "1"
+                },
+                {
+                    "text": "Novack",
+                    "value": "2"
+                },
+                {
+                    "text": "I brought my own snacks.",
+                    "value": "3"
+                },
+                {
+                    "text": "Ordering Domino's",
+                    "value": "4"
+                },
+                {
+                    "text": "Walking to Starbucks",
+                    "value": "5"
+                },
+                {
+                    "text": "I'm in the library. No time for snacks.",
+                    "value": "6"
+                }
+
+            ]
+        },
+        {
+            "question": "What did you do for Trips?",
+            "question_name": "trips",
+            "question_type": "image",
+            "question_img_url": "img/trip.png",
+            "answers": [
+                {
+                    "text": "Hiking",
+                    "img_url": "img/hiking.png",
+                    "value": "1"
+                },
+                {
+                    "text": "Mountain Biking",
+                    "img_url": "img/biking.png",
+                    "value": "2"
+                },
+                {
+                    "text": "Cabin camping",
+                    "img_url": "img/cabin.png",
+                    "value": "3"
+                },
+                {
+                    "text": "Kayaking",
+                    "img_url": "img/kayaking.png",
+                    "value": "4"
+                },
+                {
+                    "text": "Nature photography",
+                    "img_url": "img/nature.png",
+                    "value": "5"
+                },
+                {
+                    "text": "I didn't do Trips.",
+                    "img_url": "img/trips.png",
+                    "value": "6"
+                }
+
+            ]
+        },
+        {
+            "question": "How are you fulfilling your PE requirement?",
+            "question_name": "pe",
+            "question_type": "text",
+            "question_img_url": "img/pe.png",
+            "answers": [
+                {
+                    "text": "Varsity athlete",
+                    "value": "1"
+                },
+                {
+                    "text": "Club sport",
+                    "value": "2"
+                },
+                {
+                    "text": "Yoga",
+                    "value": "3"
+                },
+                {
+                    "text": "Spinning",
+                    "value": "4"
+                },
+                {
+                    "text": "Flyfishing",
+                    "value": "5"
+                },
+                {
+                    "text": "Hoping the Registrar doesn't notice",
+                    "value": "6"
+                }
+
+            ]
+        }
+    ]
+}
