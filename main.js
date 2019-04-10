@@ -82,7 +82,8 @@ $('#submit').on('click', function(e) {
     }).toArray();
 
     if (choices.length < question_length) {
-        alert('You need to answer all the questions!');
+        modal.style.display = "block";
+        document.getElementById('bad').style.display = "block";
     }
     else if (choices.length === question_length) {
         
@@ -94,8 +95,6 @@ $('#submit').on('click', function(e) {
             console.log(Number(choices[choice]));
             sum += Number(choices[choice]);
         }
-
-        console.log(sum);
         
         if (sum < 12) { document.getElementById('outcome1').style.display = "block"; }
         else if (sum < 16) { document.getElementById('outcome2').style.display = "block"; }
@@ -128,6 +127,7 @@ $('.close').on('click', function(e) {
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
+    document.getElementById('bad').style.display = "none";
     document.getElementById('outcome1').style.display = "none";
     document.getElementById('outcome2').style.display = "none";
     document.getElementById('outcome3').style.display = "none";
