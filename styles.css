@@ -55,6 +55,19 @@ label h3 {
     height: 200px;
     color: white;
     transition: opacity 0.5s;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 2000;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+label h3.long {
+    font-size: 2.5rem;
 }
 
 label img {
@@ -71,18 +84,6 @@ label:hover {
     opacity: 1;
 }
 
-label h3 {
-    background-color: green;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 2000;
-    font-size: 3rem;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
 .image-caption {
     color: black;
     background-color: white;
@@ -94,7 +95,11 @@ label h3 {
 }
 
 .image-caption p {
-    font-size: 2rem;
+    font-size: 1.5rem;
+}
+
+.image-caption p.long {
+    font-size: 1.5rem;
 }
 
 .question-box {
@@ -139,6 +144,7 @@ label h3 {
     color: white;
     font-size: 36px;;
     border-radius: 20px;
+    font-family: 'Abril Fatface', cursive;
 }
 
 .done-button button:hover {
@@ -149,6 +155,8 @@ label h3 {
     box-shadow: -4px 4px 4px 0px rgba(0,0,0,0.25);
 }
 
+
+/* https://www.w3schools.com/howto/howto_css_modals.asphttps://www.w3schools.com/howto/howto_css_modals.asp */
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -161,10 +169,14 @@ label h3 {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
+}
+
+#myModal {
+    transition: display 1s;
+}
   
   /* Modal Content/Box */
-  .modal-content {
+.modal-content {
     background-color: #fefefe;
     margin: 5% auto; /* 15% from the top and centered */
     padding: 20px;
@@ -173,44 +185,80 @@ label h3 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-  }
+}
 
-  .result {
+.result {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
     padding-top: 20px;
     padding-bottom: 20px;
-  }
+}
 
-  .result img {
+.result img {
     width: 100%;
     height: auto;
-  }
+}
 
-  .result p {
+.result p {
     font-size: 36px;
-  }
+}
 
-  .result .color-answer {
-      color: green;
-  }
+.result .color-answer {
+    color: green;
+    animation-name: grow;
+    animation-duration: 2s;
+    animation-direction: alternate;
+}
+
+@keyframes grow {
+    from {font-size: 36px; }
+    to {font-size: 54px;}
+}
   
   /* The Close Button */
-  .close {
+.close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
+}
   
-  .close:hover,
-  .close:focus {
+.close:hover,
+.close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
-  #pasta, #late-night, #stir-fry, #sushi, #smoothie, #eggs {
+#outcome1, #outcome2, #outcome3, #outcome4, #outcome5, #outcome6 {
       display: none;
-  }
+}
+
+@media only screen and (max-width: 760px) {
+    label {
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    label h3 {
+        font-size: 2rem;
+    }
+
+    label h3.long {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    label {
+        width: 100%;
+    }
+}

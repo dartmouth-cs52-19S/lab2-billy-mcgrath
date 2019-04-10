@@ -45,9 +45,17 @@ $("input[name=snack]").change(function() {
 $("input[name=trips]").change(function() {
     $("input[name=trips]:checked~img").css(
         {
-            "color": "white"
+            "opacity": "1"
+        });
+    $("input[name=trips]:checked~div").css(
+        {
+            "opacity": "1"
         });
     $("input[name=trips]:not(:checked)~img").css(
+        {
+            "opacity": "0.25"
+        });
+    $("input[name=trips]:not(:checked)~div").css(
         {
             "opacity": "0.25"
         });
@@ -66,8 +74,7 @@ $("input[name=pe]").change(function() {
 
 // https://www.w3schools.com/howto/howto_css_modals.asphttps://www.w3schools.com/howto/howto_css_modals.asp
 var question_length = 6;
-//var modal = $('myModal');
-//document.getElementById('myModal');
+var modal = document.getElementById('myModal');
 $('#submit').on('click', function(e) {
     // gather all checked radio-button values
     var choices = $("input[type='radio']:checked").map(function(i, radio) {
@@ -79,8 +86,7 @@ $('#submit').on('click', function(e) {
     }
     else if (choices.length === question_length) {
         
-        //modal.style.display = "block";
-        $('#myModal').css("display", "block");
+        modal.style.display = "block";
         var sum = 0;
 
         for (choice in choices) {
@@ -91,27 +97,42 @@ $('#submit').on('click', function(e) {
 
         console.log(sum);
         
-        if (sum < 12) { document.getElementById('eggs').style.display = "block"; }
-        else if (sum < 16) { document.getElementById('pasta').style.display = "block"; }
-        else if (sum < 20) { document.getElementById('stir-fry').style.display = "block"; }
-        else if (sum < 35) { document.getElementById('sushi').style.display = "block"; }
-        else if (sum < 30) { document.getElementById('smoothie').style.display = "block"; }
-        else if (sum <= 36) { document.getElementById('late-night').style.display = "block"; }
+        if (sum < 12) { document.getElementById('outcome1').style.display = "block"; }
+        else if (sum < 16) { document.getElementById('outcome2').style.display = "block"; }
+        else if (sum < 20) { document.getElementById('outcome3').style.display = "block"; }
+        else if (sum < 35) { document.getElementById('outcome4').style.display = "block"; }
+        else if (sum < 30) { document.getElementById('outcome5').style.display = "block"; }
+        else if (sum <= 36) { document.getElementById('outcome6').style.display = "block"; }
     }
   });
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+//var span = document.getElementsByClassName("close")[0];
 
+$('.close').on('click', function(e) {
+    modal.style.display = "none";
+    document.getElementById('outcome1').style.display = "none";
+    document.getElementById('outcome2').style.display = "none";
+    document.getElementById('outcome3').style.display = "none";
+    document.getElementById('outcome4').style.display = "none";
+    document.getElementById('outcome5').style.display = "none";
+    document.getElementById('outcome6').style.display = "none";
+});
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+/*span.onclick = function() {
   modal.style.display = "none";
-}
+}*/
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
+    document.getElementById('outcome1').style.display = "none";
+    document.getElementById('outcome2').style.display = "none";
+    document.getElementById('outcome3').style.display = "none";
+    document.getElementById('outcome4').style.display = "none";
+    document.getElementById('outcome5').style.display = "none";
+    document.getElementById('outcome6').style.display = "none";
   }
 }

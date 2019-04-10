@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Billy McGrath - Lab 2</title>
+    <title>Collis Food Quiz</title>
     <link rel="stylesheet" type="text/css" href="styles.css"/>
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
 </head>
@@ -170,7 +170,7 @@
             </label>
             <label>
                 <input type="radio" name="snack" value="6"/>
-                <h3>I'm in the library. No time for snacks.</h3>
+                <h3 class="long">I'm in the library. No time for snacks.</h3>
             </label>
         </div>
     </div>
@@ -181,42 +181,42 @@
         </div>
         <div class="answers image-question">
             <label>
-                <input type="radio" name="trip" value="1"/>
+                <input type="radio" name="trips" value="1"/>
                 <img src="img/hiking.png" />
                 <div class="image-caption">
                     <p>Hiking</p>
                 </div>
             </label>
             <label>
-                <input type="radio" name="trip" value="2"/>
+                <input type="radio" name="trips" value="2"/>
                 <img src="img/biking.png" />
                 <div class="image-caption">
                     <p>Mountain Biking</p>
                 </div>
             </label>
             <label>
-                <input type="radio" name="trip" value="3"/>
+                <input type="radio" name="trips" value="3"/>
                 <img src="img/cabin.png" />
                 <div class="image-caption">
                     <p>Cabin camping</p>
                 </div>
             </label>
             <label>
-                <input type="radio" name="trip" value="4"/>
+                <input type="radio" name="trips" value="4"/>
                 <img src="img/kayaking.png" />
                 <div class="image-caption">
                     <p>Kayaking</p>
                 </div>
             </label>
             <label>
-                <input type="radio" name="trip" value="5"/>
+                <input type="radio" name="trips" value="5"/>
                 <img src="img/nature.png" />
                 <div class="image-caption">
-                    <p>Nature photography</p>
+                    <p class="long">Nature photography</p>
                 </div>
             </label>
             <label>
-                <input type="radio" name="trip" value="6"/>
+                <input type="radio" name="trips" value="6"/>
                 <img src="img/trips.png" />
                 <div class="image-caption">
                     <p>I didn't do Trips.</p>
@@ -252,7 +252,7 @@
             </label>
             <label>
                 <input type="radio" name="pe" value="6"/>
-                <h3>Hoping the Registrar doesn't notice.</h3>
+                <h3 class="long">Hoping the Registrar doesn't notice.</h3>
             </label>
         </div>
     </div>
@@ -261,33 +261,34 @@
         <button id="submit">Done!</button>
     </div>
 
+<!-- // https://www.w3schools.com/howto/howto_css_modals.asphttps://www.w3schools.com/howto/howto_css_modals.asp -->
     <!-- The Modal -->
     <div id="myModal" class="modal">
 
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times;</span>
-            <div class="result" id="pasta">
-                <img src="img/quiz-cover.png">
+            <div class="result" id="outcome1">
+                <img src="img/pasta.png">
                 <p>You got <span class="color-answer">Collis Pasta</span>! A hearty meal for a hearty you!</p>
             </div>
-            <div class="result" id="stir-fry">
+            <div class="result" id="outcome2">
                 <img src="img/quiz-cover.png">
                 <p>You got <span class="color-answer">Stir Fry</span>! As customizable as you are!</p>
             </div>
-            <div class="result" id="sushi">
+            <div class="result" id="outcome3">
                 <img src="img/quiz-cover.png">
                 <p>You got <span class="color-answer">Sushi</span>! Nice!</p>
             </div>
-            <div class="result" id="late-night">
+            <div class="result" id="outcome4">
                 <img src="img/quiz-cover.png">
                 <p>You got <span class="color-answer">Late Night</span>! Cool!</p>
             </div>
-            <div class="result" id="eggs">
-                <img src="img/quiz-cover.png">
+            <div class="result" id="outcome5">
+                <img src="img/egg.png">
                 <p>You got <span class="color-answer">Eggs</span>! Great way to start the day!</p>
             </div>
-            <div class="result" id="smoothie">
+            <div class="result" id="outcome6">
                 <img src="img/quiz-cover.png">
                 <p>You got <span class="color-answer">Smoothie</span>! Nice!</p>
             </div>
